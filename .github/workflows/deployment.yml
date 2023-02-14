@@ -41,7 +41,7 @@ jobs :
     runs-on : ubuntu-latest
     steps: 
       - name : Get build artifacts
-        uses : actions/dowload-artifact@v3
+        uses : actions/download-artifact@v3
         with :
           name : dist-files
       - name : Listing files
