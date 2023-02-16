@@ -53,8 +53,8 @@ jobs :
           path : build
         id : upload-artifact
       - name : If artifacts uploaded
-        if :  steps.upload-artifact.outcode != 'failure'
-        run : echo 'Artifact Uploaded Successfully' 
+        if : steps.upload-artifact.outcode != 'failure'
+        run : echo 'Artifact Uploaded successfully' 
   deploy :
     needs : build
     runs-on : ubuntu-latest
